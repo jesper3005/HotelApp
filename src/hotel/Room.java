@@ -9,9 +9,10 @@ public class Room {
     int roomStars;
     int startDate;
     int endDate;
+    boolean reserved;
 
-    public Room(String roomDescription, int roomStars, int roomNumber, int floor) {
-        this.roomName = roomDescription;
+    public Room(String roomName, int roomStars, int roomNumber, int floor) {
+        this.roomName = roomName;
         this.roomStars = roomStars;
         this.roomNumber = roomNumber;
         this.floor = floor;
@@ -20,12 +21,12 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room description: " + roomName + 
-               "Room Number: " + roomNumber +
-               "Floor: " + floor + 
-               "Stars: " + roomStars + 
-               "Resevation start date: " + startDate + 
-               "Resevation end date: " + endDate;
+        return "\n\tRoom name: " + roomName + 
+               "\n\tRoom Number: " + roomNumber +
+               "\n\tFloor: " + floor + 
+               "\n\tStars: " + roomStars + 
+               "\n\tResevation start date: " + startDate + 
+               "\n\tResevation end date: " + endDate;
     }
 
     public void setRoomDescription(String roomDescription) {

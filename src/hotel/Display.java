@@ -12,7 +12,16 @@ public class Display {
     Scanner sc = new Scanner(System.in);
     SimpleDateFormat dateFormat;
     
-    public void welcomeMessage() {
+    
+            
+    public void startUpMessage() {
+        System.out.println("\nWelcome to the Hotel California!"
+                + "\nPlease identify yourself."
+                + "\nAre you an Admin?"
+                + "\nor an Customer?");
+    }
+    
+    public void welcomeMessageCustomer() {
         System.out.println("Welcome to the hotel California!" 
                    + "Here you can make a room reservation");   
     }
